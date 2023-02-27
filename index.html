@@ -1,12 +1,129 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>Suppormental Report</title>
-</head>
-<body>
- <h1> Supplemental Report</h1>
-<p>Updating soon</p>
- 
-</body>
+	<head>
+		<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="./papaparse.min.js"></script>
+		<title>Supplementary Material</title>
+        <style type="text/css">
+            body{
+            	background-color: white;
+            }
+			img{
+				max-width:80%;
+				max-height:80%;
+				width:auto;
+				height:auto;
+			}
+            .button {
+                width: 90px;
+                height: 40px;
+                border-radius: 2px;
+                border: 0px solid #ccc;
+                font-size: 20px;
+                color: white;
+                background-color: black;
+            }
+			.button_score {
+                width: 90px;
+                height: 40px;
+                border-radius: 2px;
+                border: 0px solid #ccc;
+                font-size: 20px;
+                color: white;
+                background-color: gray;
+			}
+			.button_score_select {
+                width: 90px;
+                height: 40px;
+                border-radius: 2px;
+                border: 0px solid #ccc;
+                font-size: 20px;
+                color: white;
+                background-color: red;
+			}
+			.mt{
+				border-collapse:collapse;
+				border:1px solid black;
+			}
+			.mt tr{
+				border-bottom:1px solid black;
+			}
+        </style>
+	</head>
+
+  <body>
+  	<div align="Center" style="padding:30px 100px 30px 100px;">
+		<p id="title"> <font size="6"> FLASH COMPENSATED LOW-LIGHT ENHANCEMENT</font> </p>
+		<p id="title"> <font size="6"> VIA HIERARCHICAL NETWORK PREDICTION </font> </p>
+		<p><font size="6"> (Supplementary Material) </font></p>
+		<br>
+		<p> Haowei Kuang, Haofeng Huang, Wenhan Yang, Jiaying Liu</p>
+		<br>
+		<br>
+
+		<p align="left"><font size="5"> 1. Implementation of the Compared Methods</font></p>
+		<p align="left">The code links of all the compared methods are listed in Table 1. Thanks to the authors for sharing their codes, which is very helpful for our research work. For the single-image low-light enhancement methods [1], we retrain the models using the low/normal image pairs in the dataset. For the multi-modal image restoration methods [2,3,4,5,6], we follow the same training strategy of our method.</p>
+		<br>
+
+		<p>Table 1. Code links of the compared methods.</p>
+		<table class='mt'>
+		<tr></tr>
+		<tr>
+		<th align="left">Method</th>
+		<th>&emsp; </th>
+		<th align="left">Code Link</th>
+		</tr>
+		<tr>
+		<td>DSN [1]</td>
+		<th>&emsp; </th>
+		<td><a href="https://github.com/lin-zhao-resoLve/Deep-Symmetric-Network-Enhancement">hhttps://github.com/lin-zhao-resoLve/Deep-Symmetric-Network-Enhancement</a></td>
+		</tr>
+		<tr>
+		<td>FRL [2]</td>
+		<th>&emsp;</th>
+		<td><a href="https://github.com/liuxw11/FRL">https://github.com/liuxw11/FRL</a></td>
+		</tr>
+		<tr>
+		<td>DJF [3]</td>
+		<th>&emsp;</th>
+		<td><a href="https://github.com/Yijunmaverick/DeepJointFilter">https://github.com/Yijunmaverick/DeepJointFilter</a></td>
+		</tr>
+		<tr>
+		<td>CU-Net [4]</td>
+		<th>&emsp;</th>
+		<td><a href="https://github.com/cindydeng1991/TPAMI-CU-Net">https://github.com/cindydeng1991/TPAMI-CU-Net</a></td>
+		</tr>
+		<tr>
+		<td>LSD<sub>2</sub> [5]</td>
+		<th>&emsp;</th>
+		<td><a href="https://github.com/jannemus/LSD2">https://github.com/jannemus/LSD2</a></td>
+		</tr>
+		<tr>
+		<td>deepFnF [6]</td>
+		<th>&emsp;</th>
+		<td><a href="https://github.com/likesum/deepFnF">https://github.com/likesum/deepFnF</a></td>
+		</tr>
+		<tr>
+		</table>
+
+		<br>
+		<br>
+		<p align="left"><font size="5"> 2. More Experimental Results </font></p>
+		<p align="left">More visual results of our method compared with other methods are referred to Fig. 2. The results of our method make more accurate and visual-pleasing reconstruction of details and color.</p>
+		<img src="subject.jpg">
+		<p>Figure 2. More qualitative comparison with other methods.</p>
+		<br>
+		<br>
+		<p align="left">References</p>
+		<p align="left">[1] Lin Zhao, Shaoping Lu, Tao Chen, Zhenglu Yang, and Ariel Shamir, “Deep symmetric network for underexposed image enhancement with recurrent attentional learning,” in Proc. IEEE/CVF Int’l Conf. Computer Vision, 2021.</p>
+		<p align="left">[2] Xiongwei Liu, Zehua Sheng, and Huiliang Shen, “Frequency-relevant residual learning for multi-modal image denoising,” in Proc. IEEE Int’l Conf. Image Porcessing, 2022.</p>
+		<p align="left">[3] Yijun Li, Jia-Bin Huang, Narendra Ahuja, and Ming-Hsuan Yang, “Joint image filtering with deep convolutional networks,” IEEE Trans. Pattern Anal. Mach. Intell.”, vol. 41, no. 8, pp. 1909–1923, 2019.</p>
+		<p align="left">[4] Xin Deng and Pier Luigi Dragotti, “Deep convolutional neural network for multi-modal image restoration and fusion,” IEEE Trans. Pattern Analysis and Machine Intelligence, vol. 43, no. 10, pp. 3333–3348, 2020.</p>
+		<p align="left">[5] Janne Mustaniemi, Juho Kannala, Jiri Matas, Simo S¨arkk¨a, and Janne Heikkil¨a, “LSD2 – Joint denoising and deblurring of short and long exposure images with cnns,” in Proc. British Machine Vision Conf., 2020.</p>
+		<p align="left">[6] Zhihao Xia, Micha¨el Gharbi, Federico Perazzi, Kalyan Sunkavalli, and Ayan Chakrabarti, “Deep denoising of flash and no-flash pairs for photography in low-light environments,” in Proc. IEEE/CVF Conf. Computer Vision and Pattern Recognition, 2021.</p>
+
+	</div>
+  </body>
 </html>
